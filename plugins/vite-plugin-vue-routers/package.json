@@ -1,0 +1,27 @@
+{
+  "name": "vite-plugin-vue-routers",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "vite-plugin-pages": "^0.25.0",
+    "vite-plugin-vue-layouts": "^0.7.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.26.2",
+    "@types/node": "^18.7.14",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "eslint": "^8.23.0",
+    "typescript": "^4.8.2",
+    "vite": "^3.0.9",
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5",
+    "vue-tsc": "^0.40.4"
+  }
+}

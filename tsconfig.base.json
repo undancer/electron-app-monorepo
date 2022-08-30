@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.default.json",
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+    "baseUrl": "./",
+    "paths": {
+      "@main/*": [
+        "packages/main/src/*"
+      ],
+      "@preload/*": [
+        "packages/preload/src/*"
+      ],
+      "@renderer/*": [
+        "packages/renderer/src/*"
+      ],
+      "@common/*": [
+        "packages/common/*"
+      ]
+    }
+  }
+}

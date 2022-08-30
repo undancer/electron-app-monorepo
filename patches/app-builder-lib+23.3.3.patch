@@ -1,0 +1,13 @@
+diff --git a/node_modules/app-builder-lib/out/packager.js b/node_modules/app-builder-lib/out/packager.js
+index 6cbacb9..89a9952 100644
+--- a/node_modules/app-builder-lib/out/packager.js
++++ b/node_modules/app-builder-lib/out/packager.js
+@@ -252,7 +252,7 @@ class Packager {
+             delete configFromOptions.extends;
+         }
+         const projectDir = this.projectDir;
+-        const devPackageFile = path.join(projectDir, "package.json");
++        const devPackageFile = path.join(projectDir, "packages/main", "package.json");
+         this._devMetadata = await promise_1.orNullIfFileNotExist(packageMetadata_1.readPackageJson(devPackageFile));
+         const devMetadata = this.devMetadata;
+         const configuration = await config_1.getConfig(projectDir, configPath, configFromOptions, new lazy_val_1.Lazy(() => Promise.resolve(devMetadata)));

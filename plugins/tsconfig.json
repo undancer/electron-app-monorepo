@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+    //    "lib": [],
+    "types": [
+      "vite/client",
+      //      "./preload/src",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
+    ]
+  }
+}
